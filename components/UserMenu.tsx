@@ -7,8 +7,8 @@ import {
   Menu,
   MenuItem,
   MenuTrigger,
-  Popover,
 } from "react-aria-components";
+import { Popover } from "./primitives/Popover";
 
 export default function UserMenu() {
   const router = useRouter();
@@ -41,14 +41,11 @@ export default function UserMenu() {
           />
         </svg>
       </Button>
-      <Popover
-        placement="bottom end"
-        className="bg-background/80 backdrop-blur-lg text-card-foreground border border-border rounded-md shadow-lg p-1 min-w-[160px] z-50"
-      >
+      <Popover placement="bottom end" className="p-1 min-w-[160px]">
         <Menu className="outline-none" onAction={handleMenuAction}>
           <MenuItem
             id="settings"
-            className="flex items-center gap-3 px-3 py-2 text-sm text-foreground rounded-sm hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground cursor-pointer outline-none border-0"
+            className="flex items-center gap-3 px-3 py-2 text-sm text-popover-foreground rounded-sm hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground cursor-pointer outline-none border-0"
           >
             <svg
               className="w-4 h-4"
@@ -74,7 +71,7 @@ export default function UserMenu() {
           </MenuItem>
           <MenuItem
             id="logout"
-            className="flex items-center gap-3 px-3 py-2 text-sm text-foreground rounded-sm hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground cursor-pointer outline-none border-0"
+            className="flex items-center gap-3 px-3 py-2 text-sm text-popover-foreground rounded-sm hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground cursor-pointer outline-none border-0"
           >
             <svg
               className="w-4 h-4"

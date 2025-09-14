@@ -42,13 +42,13 @@ export function Select<T extends object>({
       <Button
         className={cn(
           fieldBorderStyles({}),
-          "flex h-10 cursor-default items-center gap-4 rounded-lg border border-black/10 bg-white/90 py-2 pl-3 pr-2 text-start shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] transition dark:border-white/10 dark:bg-zinc-900/80 dark:shadow-none",
+          "flex h-10 cursor-default items-center gap-4 rounded-lg border border-border bg-card py-2 pl-3 pr-2 text-start shadow-[inset_0_1px_0_0_rgba(255,255,255,0.1)] transition dark:shadow-none",
         )}
       >
         <SelectValue className="flex-1 text-sm data-[placeholder]:italic" />
         <ChevronDown
           aria-hidden
-          className="h-4 w-4 text-zinc-600 group-disabled:text-zinc-200 dark:text-zinc-400 dark:group-disabled:text-zinc-600"
+          className="h-4 w-4 text-muted-foreground group-disabled:text-muted-foreground"
         />
       </Button>
       {description && <Description>{description}</Description>}

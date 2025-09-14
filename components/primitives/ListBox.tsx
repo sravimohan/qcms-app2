@@ -7,8 +7,8 @@ import {
   composeRenderProps,
   type ListBoxItemProps,
   type ListBoxProps,
-  Section,
-  type SectionProps,
+  ListBoxSection,
+  type ListBoxSectionProps,
 } from "react-aria-components";
 import { cn } from "@/utils/styles";
 
@@ -22,13 +22,13 @@ export const ListBox = <T extends object>({
 export const DropdownItem = (props: ListBoxItemProps) => (
   <AriaListBoxItem
     {...props}
-    className="group/item grid cursor-default grid-cols-[1fr_20px] items-center gap-2 rounded-md p-2 pr-4 text-sm outline-none ring-blue-600 ring-offset-2 ring-offset-zinc-100 focus:ring-2"
+    className="group/item grid cursor-default grid-cols-[1fr_20px] items-center gap-2 rounded-md p-2 pr-4 text-sm outline-none ring-ring ring-offset-2 ring-offset-background focus:ring-1 focus:text-accent-foreground hover:bg-accent hover:text-accent-foreground data-[disabled]:pointer-events-none data-[disabled]:opacity-50"
   >
     {composeRenderProps(props.children, (children) => (
       <>
         {children}
         <div className="col-start-2 row-start-1 flex items-center">
-          <Check className="hidden h-4 w-4 text-blue-600 group-selected/item:block" />
+          <Check className="hidden h-4 w-4 text-primary group-selected/item:block" />
         </div>
       </>
     ))}
@@ -36,21 +36,21 @@ export const DropdownItem = (props: ListBoxItemProps) => (
 );
 
 export const DropdownSection = <T extends object>(
-  props: SectionProps<T> & { title?: string },
+  props: ListBoxSectionProps<T> & { title?: string },
 ) => (
-  <Section
+  <ListBoxSection
     {...props}
     className="after:block after:h-[5px] after:content-[''] first:-mt-[5px] last:-mb-[5px]"
   >
-    {composeRenderProps(props.children, (children, { hasHeader }) => (
+    {composeRenderProps(props.children, (children) => (
       <>
-        {hasHeader && (
-          <div className="mb-1.5 px-2.5 py-1 text-sm font-semibold text-zinc-500">
+        {props.title && (
+          <div className="mb-1.5 px-2.5 py-1 text-sm font-semibold text-muted-foreground">
             {props.title}
           </div>
         )}
         {children}
       </>
     ))}
-  </Section>
+  </ListBoxSection>
 );

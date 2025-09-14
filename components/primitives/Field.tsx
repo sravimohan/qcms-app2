@@ -13,7 +13,7 @@ export const Label = (props: LabelProps) => (
   <AriaLabel
     {...props}
     className={cn(
-      "w-fit cursor-default text-sm font-medium text-zinc-950 dark:text-zinc-200",
+      "w-fit cursor-default text-sm font-medium text-foreground",
       props.className,
     )}
   />
@@ -23,14 +23,14 @@ export const Description = (props: TextProps) => (
   <Text
     {...props}
     slot="description"
-    className={cn("text-sm text-zinc-600 dark:text-zinc-400", props.className)}
+    className={cn("text-sm text-muted-foreground", props.className)}
   />
 );
 
 export const FieldError = (props: FieldErrorProps) => (
   <AriaFieldError
     {...props}
-    className={cn("text-sm text-red-600 dark:text-red-400", props.className)}
+    className={cn("text-sm text-destructive", props.className)}
   />
 );
 

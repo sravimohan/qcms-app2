@@ -12,7 +12,7 @@ export const Popover = ({ className, children, ...props }: PopoverProps) => (
     {...props}
     className={composeRenderProps(className, (className) =>
       cn(
-        "rounded-xl border border-black/10 bg-white/60 shadow-lg backdrop-blur-xl backdrop-saturate-200 dark:border-white/10 dark:bg-zinc-900/70",
+        "bg-popover text-popover-foreground border border-border rounded-md shadow-lg backdrop-blur-lg",
         className,
       ),
     )}
