@@ -1,0 +1,16 @@
+- use nextjs 15, tailwind v4, react aria components
+- Create a enterprise application layout with,
+    - header
+    - footer
+    - left navigation
+- make it responsive, use the full width and height of the screen
+- use typescript
+- light/dark mode
+- keep the colours muted and professional
+- create empty routes for
+    - dashboard
+    - settings
+    - forms
+    - sections
+    - questions    
+    - help
