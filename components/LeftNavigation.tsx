@@ -3,6 +3,7 @@
 import { clsx } from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Button } from "./primitives/Button";
 
 interface LeftNavigationProps {
   isOpen: boolean;
@@ -125,10 +126,9 @@ export function LeftNavigation({ isOpen, onClose }: LeftNavigationProps) {
     <>
       {/* Mobile overlay */}
       {isOpen && (
-        <button
-          type="button"
+        <Button
           className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
-          onClick={onClose}
+          onPress={onClose}
           onKeyDown={(e) => {
             if (e.key === "Escape") {
               onClose();
@@ -153,15 +153,14 @@ export function LeftNavigation({ isOpen, onClose }: LeftNavigationProps) {
                 key={item.name}
                 href={item.href}
                 className={clsx(
-                  "flex items-center gap-3 px-3 py-2 rounded-md text-sm font-medium transition-colors",
+                  "flex items-center gap-3 p-3 rounded-md transition-colors",
                   isActive
-                    ? "bg-primary text-primary-foreground"
-                    : "text-muted-foreground hover:text-foreground hover:bg-accent",
+                    ? "bg-accent text-accent-foreground"
+                    : "hover:bg-accent",
                 )}
-                onClick={onClose}
               >
                 {item.icon}
-                {item.name}
+                <span>{item.name}</span>
               </Link>
             );
           })}

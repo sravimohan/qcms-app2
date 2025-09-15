@@ -1,4 +1,5 @@
 import { MainLayout } from "@/components/MainLayout";
+import { Button } from "@/components/primitives/Button";
 import { Select, SelectItem } from "@/components/primitives/Select";
 
 export default function Settings() {
@@ -90,12 +91,7 @@ export default function Settings() {
               </div>
 
               <div className="mt-6">
-                <button
-                  type="button"
-                  className="bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-colors"
-                >
-                  Save Changes
-                </button>
+                <Button variant="primary">Save Changes</Button>
               </div>
             </div>
           </div>

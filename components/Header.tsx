@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "react-aria-components";
+import { Button } from "./primitives/Button";
 import { useTheme } from "./ThemeProvider";
 import UserMenu from "./UserMenu";
 
@@ -21,8 +21,9 @@ export function Header({ onMenuToggle, isMobileMenuOpen }: HeaderProps) {
       {/* Mobile menu button and logo */}
       <div className="flex items-center gap-4">
         <Button
+          variant="icon"
           onPress={onMenuToggle}
-          className="lg:hidden p-2 hover:bg-accent rounded-md transition-colors"
+          className="lg:hidden"
           aria-label="Toggle menu"
         >
           <svg
@@ -58,8 +59,8 @@ export function Header({ onMenuToggle, isMobileMenuOpen }: HeaderProps) {
       {/* Right side - Theme toggle and user actions */}
       <div className="flex items-center gap-4">
         <Button
+          variant="icon"
           onPress={toggleDarkMode}
-          className="p-2 hover:bg-accent rounded-md transition-colors cursor-pointer"
           aria-label="Toggle dark mode"
         >
           {theme === "dark" ? (

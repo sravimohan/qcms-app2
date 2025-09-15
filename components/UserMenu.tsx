@@ -1,13 +1,6 @@
-"use client";
-
 import { useRouter } from "next/navigation";
-import {
-  Button,
-  type Key,
-  Menu,
-  MenuItem,
-  MenuTrigger,
-} from "react-aria-components";
+import { type Key, Menu, MenuItem, MenuTrigger } from "react-aria-components";
+import { Button } from "./primitives/Button";
 import { Popover } from "./primitives/Popover";
 
 export default function UserMenu() {
@@ -27,7 +20,7 @@ export default function UserMenu() {
 
   return (
     <MenuTrigger>
-      <Button className="w-8 h-8 bg-primary rounded-full flex items-center justify-center cursor-pointer hover:bg-primary/90 transition-colors">
+      <Button variant="icon" className="w-8 h-8 rounded-full">
         <svg
           className="w-4 h-4 text-primary-foreground"
           fill="currentColor"

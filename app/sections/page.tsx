@@ -1,3 +1,4 @@
+import { Button } from "@/components/primitives/Button";
 import { MainLayout } from "../../components/MainLayout";
 
 export default function Sections() {
@@ -12,12 +13,7 @@ export default function Sections() {
             </p>
           </div>
 
-          <button
-            type="button"
-            className="bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-colors"
-          >
-            Create New Section
-          </button>
+          <Button variant="primary">Create New Section</Button>
         </div>
 
         <div className="space-y-4">
@@ -25,18 +21,12 @@ export default function Sections() {
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-lg font-semibold">Personal Information</h3>
               <div className="flex gap-2">
-                <button
-                  type="button"
-                  className="px-3 py-1 text-sm border border-border rounded hover:bg-accent"
-                >
+                <Button variant="secondary" size="sm">
                   Edit
-                </button>
-                <button
-                  type="button"
-                  className="px-3 py-1 text-sm border border-border rounded hover:bg-accent"
-                >
+                </Button>
+                <Button variant="secondary" size="sm">
                   Delete
-                </button>
+                </Button>
               </div>
             </div>
             <p className="text-muted-foreground mb-3">
@@ -54,18 +44,12 @@ export default function Sections() {
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-lg font-semibold">Feedback & Rating</h3>
               <div className="flex gap-2">
-                <button
-                  type="button"
-                  className="px-3 py-1 text-sm border border-border rounded hover:bg-accent"
-                >
+                <Button variant="secondary" size="sm">
                   Edit
-                </button>
-                <button
-                  type="button"
-                  className="px-3 py-1 text-sm border border-border rounded hover:bg-accent"
-                >
+                </Button>
+                <Button variant="secondary" size="sm">
                   Delete
-                </button>
+                </Button>
               </div>
             </div>
             <p className="text-muted-foreground mb-3">
@@ -83,18 +67,12 @@ export default function Sections() {
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-lg font-semibold">Product Evaluation</h3>
               <div className="flex gap-2">
-                <button
-                  type="button"
-                  className="px-3 py-1 text-sm border border-border rounded hover:bg-accent"
-                >
+                <Button variant="secondary" size="sm">
                   Edit
-                </button>
-                <button
-                  type="button"
-                  className="px-3 py-1 text-sm border border-border rounded hover:bg-accent"
-                >
+                </Button>
+                <Button variant="secondary" size="sm">
                   Delete
-                </button>
+                </Button>
               </div>
             </div>
             <p className="text-muted-foreground mb-3">
@@ -112,18 +90,12 @@ export default function Sections() {
             <div className="flex justify-between items-center mb-4">
               <h3 className="text-lg font-semibold">Demographics</h3>
               <div className="flex gap-2">
-                <button
-                  type="button"
-                  className="px-3 py-1 text-sm border border-border rounded hover:bg-accent"
-                >
+                <Button variant="secondary" size="sm">
                   Edit
-                </button>
-                <button
-                  type="button"
-                  className="px-3 py-1 text-sm border border-border rounded hover:bg-accent"
-                >
+                </Button>
+                <Button variant="secondary" size="sm">
                   Delete
-                </button>
+                </Button>
               </div>
             </div>
             <p className="text-muted-foreground mb-3">

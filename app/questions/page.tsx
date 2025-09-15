@@ -1,3 +1,4 @@
+import { Button } from "@/components/primitives/Button";
 import { MainLayout } from "../../components/MainLayout";
 
 export default function Questions() {
@@ -13,12 +14,7 @@ export default function Questions() {
             </p>
           </div>
 
-          <button
-            type="button"
-            className="bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-colors"
-          >
-            Create New Question
-          </button>
+          <Button variant="primary">Create New Question</Button>
         </div>
 
         <div className="flex gap-4 mb-6">
@@ -57,18 +53,12 @@ export default function Questions() {
                 </span>
               </div>
               <div className="flex gap-2">
-                <button
-                  type="button"
-                  className="px-3 py-1 text-sm border border-border rounded hover:bg-accent"
-                >
+                <Button variant="secondary" size="sm">
                   Edit
-                </button>
-                <button
-                  type="button"
-                  className="px-3 py-1 text-sm border border-border rounded hover:bg-accent"
-                >
+                </Button>
+                <Button variant="secondary" size="sm">
                   Delete
-                </button>
+                </Button>
               </div>
             </div>
             <p className="text-muted-foreground mb-3">
@@ -92,18 +82,12 @@ export default function Questions() {
                 </span>
               </div>
               <div className="flex gap-2">
-                <button
-                  type="button"
-                  className="px-3 py-1 text-sm border border-border rounded hover:bg-accent"
-                >
+                <Button variant="secondary" size="sm">
                   Edit
-                </button>
-                <button
-                  type="button"
-                  className="px-3 py-1 text-sm border border-border rounded hover:bg-accent"
-                >
+                </Button>
+                <Button variant="secondary" size="sm">
                   Delete
-                </button>
+                </Button>
               </div>
             </div>
             <p className="text-muted-foreground mb-3">
@@ -128,18 +112,12 @@ export default function Questions() {
                 </span>
               </div>
               <div className="flex gap-2">
-                <button
-                  type="button"
-                  className="px-3 py-1 text-sm border border-border rounded hover:bg-accent"
-                >
+                <Button variant="secondary" size="sm">
                   Edit
-                </button>
-                <button
-                  type="button"
-                  className="px-3 py-1 text-sm border border-border rounded hover:bg-accent"
-                >
+                </Button>
+                <Button variant="secondary" size="sm">
                   Delete
-                </button>
+                </Button>
               </div>
             </div>
             <p className="text-muted-foreground mb-3">
