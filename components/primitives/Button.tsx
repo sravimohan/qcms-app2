@@ -1,12 +1,12 @@
 "use client";
 
+import { focusRing } from "@/utils/styles";
 import {
-  Button as AriaButton,
-  type ButtonProps as AriaButtonProps,
-  composeRenderProps,
+    Button as AriaButton,
+    type ButtonProps as AriaButtonProps,
+    composeRenderProps,
 } from "react-aria-components";
 import { tv, type VariantProps } from "tailwind-variants";
-import { focusRing } from "@/utils/styles";
 
 const button = tv({
   extend: focusRing,
@@ -19,12 +19,13 @@ const button = tv({
         "rounded-lg border border-border bg-secondary text-secondary-foreground hover:bg-secondary-hover pressed:bg-secondary-pressed",
       destructive:
         "rounded-lg border border-transparent bg-destructive text-destructive-foreground hover:bg-destructive-hover pressed:bg-destructive-pressed",
-      icon: "rounded-full border border-transparent bg-transparent text-foreground hover:bg-secondary pressed:bg-secondary-pressed",
+      icon: "flex items-center justify-center rounded-full border border-transparent bg-transparent text-foreground hover:bg-secondary pressed:bg-secondary-pressed",
     },
     size: {
       sm: "px-3 py-1.5",
       md: "px-4 py-2",
       lg: "px-6 py-3",
+      icon: "p-2",
     },
   },
   defaultVariants: {

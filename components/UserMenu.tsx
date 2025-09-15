@@ -20,7 +20,7 @@ export default function UserMenu() {
 
   return (
     <MenuTrigger>
-      <Button variant="icon" className="w-8 h-8 rounded-full">
+      <Button variant="icon" size="icon" aria-label="user menu">
         <svg
           className="w-4 h-4 text-primary-foreground"
           fill="currentColor"
