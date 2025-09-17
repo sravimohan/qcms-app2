@@ -1,4 +1,8 @@
 {
+  "name": "@qcms/ui",
+  "version": "0.1.0",
+  "description": "QCMS UI Component Library",
+  "private": true,
   "devDependencies": {
     "@babel/preset-react": "^7.27.1",
     "@storybook/addon-docs": "^9.1.6",
@@ -32,6 +36,7 @@
     "coverage": "vitest --coverage"
   },
   "dependencies": {
+    "@qcms/lib": "workspace:*",
     "clsx": "^2.1.1",
     "lucide-react": "^0.544.0",
     "postcss": "^8.5.6",

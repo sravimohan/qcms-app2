@@ -1,17 +1,28 @@
+# QCMS Application
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## For AI Assistants 🤖
+
+When working with this codebase, please note:
+
+- **Project Type**: QCMS (Quality Content Management System) built with Next.js 15 and React 19
+- **Monorepo Structure**: Contains qcms-app (main), qcms-form (forms), and ui (components)
+- **Tech Stack**: Next.js + TypeScript + React Aria Components + Tailwind CSS + Biome
+- **Package Manager**: Use `pnpm` (not npm/yarn)
+- **Styling**: Tailwind utility classes with React Aria Components for accessibility
+- **Code Quality**: Biome handles linting/formatting (replaces ESLint/Prettier)
+- **Architecture**: Follow existing patterns in components/ and utils/
+- **Accessibility**: WCAG 2.1 AA compliance required for all UI components
+
+📋 See `.vscode/instructions.md` for comprehensive development guidelines and coding standards.
 
 ## Getting Started
 
 First, run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.

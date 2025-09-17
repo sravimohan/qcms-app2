@@ -1,0 +1,10 @@
+packages:
+  - "qcms-app"
+  - "qcms-form" 
+  - "ui"
+  - "lib"
+
+onlyBuiltDependencies:
+  - "@tailwindcss/oxide"
+  - "sharp"
+  - "esbuild"
